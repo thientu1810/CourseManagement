@@ -1,4 +1,6 @@
 UI\NewJFrame$2.class
 UI\NewJFrame.class
+DAL\Course.class
+DAL\Person.class
 UI\NewJFrame$1.class
 DAL\MyDatabaseManager.class
