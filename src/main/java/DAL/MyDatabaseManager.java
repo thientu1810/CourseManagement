@@ -25,6 +25,7 @@ public class MyDatabaseManager {
     public static void connectDB(){
         host = "localhost";
         port = "3306";
+        dbName = "coursemanager";
         dbUser = "";
         dbPassword = "";
         String dbPath = "jdbc:mysql://" + host + ":" + port + "/"
