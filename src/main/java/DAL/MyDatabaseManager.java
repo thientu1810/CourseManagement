@@ -6,7 +6,6 @@ package DAL;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
-import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
@@ -22,23 +21,25 @@ public class MyDatabaseManager {
     private static Statement s;
     private static String host, port, dbName, dbUser, dbPassword;
     
-    public static void connectDB(){
-        host = "localhost";
-        port = "3306";
-        dbName = "coursemanager";
-        dbUser = "";
-        dbPassword = "";
-        String dbPath = "jdbc:mysql://" + host + ":" + port + "/"
-                + dbName + "?useUnicode=yes&characterEncoding=UTF-8";
-        try {
-            c = (Connection) DriverManager.getConnection(dbPath, dbUser, dbPassword);
-            s = (Statement) c.createStatement();
-            
-            System.out.println("Connected");
-        } catch (SQLException ex) {
-            System.out.print(ex.getMessage());
-        }
+    public static void connectDB() {
+    host = "localhost";
+    port = "3306";
+    dbName = "coursemanager";
+    dbUser = "coursemanager";
+    dbPassword = "123";
+    String dbPath = "jdbc:mysql://" + host + ":" + port + "/"
+            + dbName + "?useUnicode=yes&characterEncoding=UTF-8";
+    try {
+        c = (Connection) DriverManager.getConnection(dbPath, dbUser, dbPassword);
+        s = (Statement) c.createStatement();
+
+        System.out.println("Connected");
+    } catch (SQLException ex) {
+        System.out.print(ex.getMessage());
+        System.out.println("Connection failed");
     }
+}
+
     public static Connection getConnection()
     {
         return c;
