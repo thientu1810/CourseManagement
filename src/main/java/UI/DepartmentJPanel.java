@@ -37,6 +37,18 @@ public class DepartmentJPanel extends javax.swing.JPanel {
         textAdmin.setText("");
         textDate.setText("");     
     }
+        private void loadDataToTable() {
+        List<Department> departments = DepartmentBLL.getAllDepartments();
+        DefaultTableModel tableModel = (DefaultTableModel) mytableModel.getModel();
+        
+        tableModel.setRowCount(0); // clear table
+        for (Department department : departments) {
+            Object[] row = {department.getDepartmentID(), department.getDepartmentName(),
+                department.getBudget(), department.getStartDate(), department.getAdminStrator()};
+            tableModel.addRow(row);
+        }
+    }
+
     
 
     /**
@@ -71,7 +83,7 @@ public class DepartmentJPanel extends javax.swing.JPanel {
         jButton3 = new javax.swing.JButton();
         jButton4 = new javax.swing.JButton();
         jScrollPane4 = new javax.swing.JScrollPane();
-        tableModel = new javax.swing.JTable();
+        mytableModel = new javax.swing.JTable();
 
         jRadioButton1.setText("jRadioButton1");
 
@@ -244,12 +256,9 @@ public class DepartmentJPanel extends javax.swing.JPanel {
                 .addContainerGap(24, Short.MAX_VALUE))
         );
 
-        tableModel.setModel(new javax.swing.table.DefaultTableModel(
+        mytableModel.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                { new Integer(1), "hieu",  new Integer(3), "h", "2020"},
-                { new Integer(2), null, null, null, null},
-                { new Integer(3), null, null, null, null},
-                { new Integer(4), null, null, null, null}
+
             },
             new String [] {
                 "ID", "Name", "Budget", "Adminstrator", "StartDate"
@@ -263,16 +272,16 @@ public class DepartmentJPanel extends javax.swing.JPanel {
                 return types [columnIndex];
             }
         });
-        tableModel.addAncestorListener(new javax.swing.event.AncestorListener() {
+        mytableModel.addAncestorListener(new javax.swing.event.AncestorListener() {
             public void ancestorAdded(javax.swing.event.AncestorEvent evt) {
-                tableModelAncestorAdded(evt);
+                mytableModelAncestorAdded(evt);
             }
             public void ancestorMoved(javax.swing.event.AncestorEvent evt) {
             }
             public void ancestorRemoved(javax.swing.event.AncestorEvent evt) {
             }
         });
-        jScrollPane4.setViewportView(tableModel);
+        jScrollPane4.setViewportView(mytableModel);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
@@ -353,10 +362,10 @@ public class DepartmentJPanel extends javax.swing.JPanel {
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton1KeyPressed
 
-    private void tableModelAncestorAdded(javax.swing.event.AncestorEvent evt) {//GEN-FIRST:event_tableModelAncestorAdded
+    private void mytableModelAncestorAdded(javax.swing.event.AncestorEvent evt) {//GEN-FIRST:event_mytableModelAncestorAdded
         // TODO add your handling code here:
       
-    }//GEN-LAST:event_tableModelAncestorAdded
+    }//GEN-LAST:event_mytableModelAncestorAdded
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
@@ -378,7 +387,7 @@ public class DepartmentJPanel extends javax.swing.JPanel {
     private javax.swing.JScrollPane jScrollPane4;
     private javax.swing.JTable jTable1;
     private javax.swing.JTextField jTextField1;
-    private javax.swing.JTable tableModel;
+    private javax.swing.JTable mytableModel;
     private javax.swing.JTextField textAdmin;
     private javax.swing.JTextField textBudget;
     private javax.swing.JTextField textDate;
