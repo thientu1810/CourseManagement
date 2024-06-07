@@ -21,12 +21,12 @@ public class MyDatabaseManager {
     private static Statement s;
     private static String host, port, dbName, dbUser, dbPassword;
     
-    public static void connectDB() {
+   public static void connectDB() {
     host = "localhost";
     port = "3306";
     dbName = "coursemanager";
-    dbUser = "coursemanager";
-    dbPassword = "123";
+    dbUser = "root";
+    dbPassword = "";
     String dbPath = "jdbc:mysql://" + host + ":" + port + "/"
             + dbName + "?useUnicode=yes&characterEncoding=UTF-8";
     try {
@@ -40,22 +40,63 @@ public class MyDatabaseManager {
     }
 }
 
-    public static Connection getConnection()
-    {
+    public static Connection getConnection() {
+        if (c == null) {
+            connectDB();
+        }
         return c;
     }
+
     //run sql
-    public static ResultSet doReadQuery(String sql) {
-        ResultSet rs = null;
+    public static ResultSet doReadQuery(String sql) throws SQLException {
+    ResultSet rs = null;
+    try {
+        if (s == null) {
+            getConnection(); 
+        }
+        rs = s.executeQuery(sql);
+        System.out.println(sql + " truy van thanh cong.");
+    } catch (SQLException ex) {
+        System.out.println("Khong the truy van du lieu.");
+        Logger.getLogger(MyDatabaseManager.class.getName())
+                .log(Level.SEVERE, null, ex);
+    }
+    
+    return rs;
+}
+
+
+    public static int SQLUpdate(String sql) {
+        int i = 0;
         
         try {
-            rs = s.executeQuery(sql);
+            i = s.executeUpdate(sql);
+            System.out.println(sql + " cap nhat thanh cong.");
         } catch (SQLException ex) {
+            System.out.println("Khong the cap nhat du lieu.");
             Logger.getLogger(MyDatabaseManager.class.getName())
                     .log(Level.SEVERE, null, ex);
         }
-        return rs;
+        
+        return i;
     }
+    
+    public static void closeConnection() {
+        try{
+            if (c != null){
+                c.close();
+            }
+            if (s != null){
+                s.close();
+            }
+            System.out.println("Da ngat ket noi den database.");
+        }
+        catch (SQLException e){
+            System.out.println("Khong the dong ket noi den database.");
+        }
+    }
+    
+
     //test connection
     public static void main(String[] args) {
         MyDatabaseManager.connectDB();

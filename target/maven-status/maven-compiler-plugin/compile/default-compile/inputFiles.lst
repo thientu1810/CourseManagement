@@ -1,8 +1,46 @@
-D:\Document\NetBeansProjects\CourseManagement\src\main\java\UI\Person.java
-D:\Document\NetBeansProjects\CourseManagement\src\main\java\UI\PhanCongJPanel.java
-D:\Document\NetBeansProjects\CourseManagement\src\main\java\UI\NewJFrame.java
-D:\Document\NetBeansProjects\CourseManagement\src\main\java\DAL\MyDatabaseManager.java
-D:\Document\NetBeansProjects\CourseManagement\src\main\java\DAL\Person.java
-D:\Document\NetBeansProjects\CourseManagement\src\main\java\UI\PersonJPanel.java
-D:\Document\NetBeansProjects\CourseManagement\src\main\java\DAL\Course.java
-D:\Document\NetBeansProjects\CourseManagement\src\main\java\BLL\PersonBLL.java
+C:\Users\ACER\Documents\Zalo Received Files\CourseManagement (2)\CourseManagement\src\main\java\Entity\StudentGrade.java
+C:\Users\ACER\Documents\Zalo Received Files\CourseManagement (2)\CourseManagement\src\main\java\BLL\StudentGradeBLL.java
+C:\Users\ACER\Documents\Zalo Received Files\CourseManagement (2)\CourseManagement\src\main\java\DAL\DepartmentDAL.java
+C:\Users\ACER\Documents\Zalo Received Files\CourseManagement (2)\CourseManagement\src\main\java\UI\OnlineCourseAddForm.java
+C:\Users\ACER\Documents\Zalo Received Files\CourseManagement (2)\CourseManagement\src\main\java\UI\StudentGradeAddForm.java
+C:\Users\ACER\Documents\Zalo Received Files\CourseManagement (2)\CourseManagement\src\main\java\Entity\Course.java
+C:\Users\ACER\Documents\Zalo Received Files\CourseManagement (2)\CourseManagement\src\main\java\UI\DepartmentForm.java
+C:\Users\ACER\Documents\Zalo Received Files\CourseManagement (2)\CourseManagement\src\main\java\DAL\OnsiteCourseDAL.java
+C:\Users\ACER\Documents\Zalo Received Files\CourseManagement (2)\CourseManagement\src\main\java\Entity\Department.java
+C:\Users\ACER\Documents\Zalo Received Files\CourseManagement (2)\CourseManagement\src\main\java\Entity\OnsiteCourse.java
+C:\Users\ACER\Documents\Zalo Received Files\CourseManagement (2)\CourseManagement\src\main\java\Entity\CourseInstructor.java
+C:\Users\ACER\Documents\Zalo Received Files\CourseManagement (2)\CourseManagement\src\main\java\UI\OnlineCourseForm.java
+C:\Users\ACER\Documents\Zalo Received Files\CourseManagement (2)\CourseManagement\src\main\java\BLL\CourseInstructorBLL.java
+C:\Users\ACER\Documents\Zalo Received Files\CourseManagement (2)\CourseManagement\src\main\java\Entity\OnlineCourse.java
+C:\Users\ACER\Documents\Zalo Received Files\CourseManagement (2)\CourseManagement\src\main\java\BLL\DepartmentBLL.java
+C:\Users\ACER\Documents\Zalo Received Files\CourseManagement (2)\CourseManagement\src\main\java\UI\DepartmentEditForm.java
+C:\Users\ACER\Documents\Zalo Received Files\CourseManagement (2)\CourseManagement\src\main\java\UI\CourseInstructorEditForm.java
+C:\Users\ACER\Documents\Zalo Received Files\CourseManagement (2)\CourseManagement\src\main\java\UI\StudentAddForm.java
+C:\Users\ACER\Documents\Zalo Received Files\CourseManagement (2)\CourseManagement\src\main\java\BLL\OnlineCourseBLL.java
+C:\Users\ACER\Documents\Zalo Received Files\CourseManagement (2)\CourseManagement\src\main\java\UI\StudentGradeForm.java
+C:\Users\ACER\Documents\Zalo Received Files\CourseManagement (2)\CourseManagement\src\main\java\BLL\OnsiteCourseBLL.java
+C:\Users\ACER\Documents\Zalo Received Files\CourseManagement (2)\CourseManagement\src\main\java\UI\OnlineCourseEditForm.java
+C:\Users\ACER\Documents\Zalo Received Files\CourseManagement (2)\CourseManagement\src\main\java\UI\TeacherEditForm.java
+C:\Users\ACER\Documents\Zalo Received Files\CourseManagement (2)\CourseManagement\src\main\java\Entity\Teacher.java
+C:\Users\ACER\Documents\Zalo Received Files\CourseManagement (2)\CourseManagement\src\main\java\UI\OnsiteCourseEditForm.java
+C:\Users\ACER\Documents\Zalo Received Files\CourseManagement (2)\CourseManagement\src\main\java\BLL\TeacherBLL.java
+C:\Users\ACER\Documents\Zalo Received Files\CourseManagement (2)\CourseManagement\src\main\java\UI\OnsiteCourseAddForm.java
+C:\Users\ACER\Documents\Zalo Received Files\CourseManagement (2)\CourseManagement\src\main\java\UI\MainFrame.java
+C:\Users\ACER\Documents\Zalo Received Files\CourseManagement (2)\CourseManagement\src\main\java\DAL\StudentGradeDAL.java
+C:\Users\ACER\Documents\Zalo Received Files\CourseManagement (2)\CourseManagement\src\main\java\DAL\CourseInstructorDAL.java
+C:\Users\ACER\Documents\Zalo Received Files\CourseManagement (2)\CourseManagement\src\main\java\UI\StudentGradeEditForm.java
+C:\Users\ACER\Documents\Zalo Received Files\CourseManagement (2)\CourseManagement\src\main\java\UI\CourseInstructor.java
+C:\Users\ACER\Documents\Zalo Received Files\CourseManagement (2)\CourseManagement\src\main\java\UI\StudentEditForm.java
+C:\Users\ACER\Documents\Zalo Received Files\CourseManagement (2)\CourseManagement\src\main\java\DAL\StudentDAL.java
+C:\Users\ACER\Documents\Zalo Received Files\CourseManagement (2)\CourseManagement\src\main\java\DAL\OnlineCourseDAL.java
+C:\Users\ACER\Documents\Zalo Received Files\CourseManagement (2)\CourseManagement\src\main\java\DAL\TeacherDAL.java
+C:\Users\ACER\Documents\Zalo Received Files\CourseManagement (2)\CourseManagement\src\main\java\UI\TeacherForm.java
+C:\Users\ACER\Documents\Zalo Received Files\CourseManagement (2)\CourseManagement\src\main\java\UI\TeacherAddForm.java
+C:\Users\ACER\Documents\Zalo Received Files\CourseManagement (2)\CourseManagement\src\main\java\UI\StudentForm.java
+C:\Users\ACER\Documents\Zalo Received Files\CourseManagement (2)\CourseManagement\src\main\java\UI\DepartmentAddForm.java
+C:\Users\ACER\Documents\Zalo Received Files\CourseManagement (2)\CourseManagement\src\main\java\Entity\Student.java
+C:\Users\ACER\Documents\Zalo Received Files\CourseManagement (2)\CourseManagement\src\main\java\UI\CourseInstructorAddForm.java
+C:\Users\ACER\Documents\Zalo Received Files\CourseManagement (2)\CourseManagement\src\main\java\BLL\StudentBLL.java
+C:\Users\ACER\Documents\Zalo Received Files\CourseManagement (2)\CourseManagement\src\main\java\DAL\MyDatabaseManager.java
+C:\Users\ACER\Documents\Zalo Received Files\CourseManagement (2)\CourseManagement\src\main\java\UI\OnsiteCourseForm.java
+C:\Users\ACER\Documents\Zalo Received Files\CourseManagement (2)\CourseManagement\src\main\java\UI\StudentGradeViewForm.java

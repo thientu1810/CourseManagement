@@ -2,54 +2,58 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package DAL;
+package Entity;
 
 /**
  *
  * @author USER
  */
-public class Course {
-    int courseId, departmentId;
-    String title, credits;
-    public Course(){
-        
-    }
-    public Course(int departmentId, String title, String credits){
-        this.departmentId = departmentId;
-        this.title = title;
-        this.credits = credits;
+public abstract class Course {
+    private int courseID;
+    private String title;
+    private int credits;
+    private int departmentID;
+    private String departmentName;
+
+    public int getCourseID() {
+        return courseID;
     }
 
-    public int getCourseId() {
-        return courseId;
-    }
-
-    public int getDepartmentId() {
-        return departmentId;
+    public void setCourseID(int courseID) {
+        this.courseID = courseID;
     }
 
     public String getTitle() {
         return title;
     }
 
-    public String getCredits() {
-        return credits;
-    }
-
-    public void setCourseId(int courseId) {
-        this.courseId = courseId;
-    }
-
-    public void setDepartmentId(int departmentId) {
-        this.departmentId = departmentId;
-    }
-
     public void setTitle(String title) {
         this.title = title;
     }
 
-    public void setCredits(String credits) {
+    public int getCredits() {
+        return credits;
+    }
+
+    public void setCredits(int credits) {
         this.credits = credits;
+    }
+
+    public int getDepartmentID() {
+        return departmentID;
+    }
+
+    public void setDepartmentID(int departmentID) {
+        this.departmentID = departmentID;
+    }
+    
+    public void setDepartmentName(String departmentName) {
+        this.departmentName = departmentName;
+    }
+
+    @Override
+    public String toString() {
+        return "<html>CourseID: " + courseID + "<br>Title=" + title + "<br>Credits=" + credits + "<br>Department: " + departmentName;
     }
     
 }
